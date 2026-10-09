@@ -1,0 +1,26 @@
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* =========================================
+   PRICE TICKER
+   ========================================= */
+
+.ticker-track {
+  animation: ticker-scroll 50s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
